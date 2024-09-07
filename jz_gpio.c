@@ -112,7 +112,7 @@ static void show_gpios() {
 		printf("================\n");
 
 		for (int j = 0; j < 32; j++) {
-			printf("P%c%02u: ", 'A' + i, j);
+			printf("P%c%02u [%02d]: ", 'A' + i, j, i * 32 + j);
 			uint8_t drive_strength = get_drive_strength(port, j);
 
 			bool b_int = BIT_GET(port->INT, j);
