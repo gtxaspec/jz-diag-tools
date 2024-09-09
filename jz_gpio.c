@@ -236,10 +236,14 @@ void set_port_width() {
             GPIO_PORT_WIDTH = 0x100;
             break;
         case 0x21:
+            GPIO_PORT_WIDTH = 0x1000;
+            break;
         case 0x23:
             GPIO_PORT_WIDTH = 0x1000;
             break;
         case 0x30:
+            GPIO_PORT_WIDTH = 0x1000;
+            break;
         case 0x31:
             GPIO_PORT_WIDTH = 0x1000;
             break;
